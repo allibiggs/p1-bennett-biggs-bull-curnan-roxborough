@@ -1,0 +1,62 @@
+@import "variables.less";
+
+h1 {
+    .h1-style();
+}
+
+p {
+    .text-style();
+}
+
+
+
+header {
+    nav {
+        background-color: @green;
+
+        .nav {
+            align-items: baseline;
+
+            .nav-link {
+                color: @black;
+                .nav-style();
+            }
+        }
+
+        ul .nav .justify-content-center {
+            display: flex;
+            align-items: flex-end;
+
+            li {
+            }
+        }
+
+        img {
+            width: 350px;
+        }
+    }
+}
+
+footer {
+    background-color: @green;
+
+    .row {
+        justify-content: center;
+
+        a {
+            .small-text-style();
+            color: @black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+
+    .socialicons {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            color: @black;
+        }
+    }
+}
