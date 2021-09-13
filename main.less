@@ -1,13 +1,24 @@
 @import "variables.less";
 
+body {
+    background-color: @white;
+}
+
 h1 {
     .h1-style();
+}
+
+h2 {
+    .h2-style();
 }
 
 p {
     .text-style();
 }
 
+li {
+    .text-style();
+}
 
 
 header {
@@ -23,7 +34,7 @@ header {
             }
         }
 
-        ul .nav .justify-content-center {
+        ul  {
             display: flex;
             align-items: flex-end;
 
@@ -34,6 +45,37 @@ header {
         img {
             width: 350px;
         }
+    }
+}
+
+.legacy {
+    .img-fluid {
+    .hero-image();
+}
+
+    .container-fluid {
+        .content {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .row{
+            img {
+                width: 500px;
+            }
+            button {
+                .btn-primary();
+                .btn();
+            }
+
+            button:hover {
+                .btn-primary-hover();
+            }
+        }
+    } 
+    .container2 {
+        background-color: @black;
+        color: @white;
     }
 }
 
