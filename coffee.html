@@ -6,8 +6,7 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/ibr4uie.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet/less" type="text/css" href="./main.less" />
 
     <script src="https://kit.fontawesome.com/a07d260820.js" crossorigin="anonymous"></script>
@@ -17,31 +16,110 @@
   </head>
 
   <body>
-    <header>
-        <nav>
-            <ul class="nav justify-content-center p-3">
-                <li class="nav-item px-5">
-                  <a class="nav-link" href="coffee.html">Coffee</a>
-                </li>
-                <li class="nav-item px-5">
-                  <a class="nav-link" href="tavern.html">Tavern</a>
-                </li>
 
-                <a href="index.html"><img class="" src="images/blackdog-logo_main.png" alt="Black Dog" title="Black Dog"/></a>
+    <div class="site">
+      <header>
+          <nav>
+              <ul class="nav justify-content-center p-3">
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="coffee.html">Coffee</a>
+                  </li>
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="tavern.html">Tavern</a>
+                  </li>
 
-                <li class="nav-item px-5">
-                  <a class="nav-link" href="legacy.html">Legacy Outfitters</a>
-                </li>
-                <li class="nav-item px-5">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-              </ul>
-        </nav>
-    </header>
+                  <a href="index.html"><img class="" src="images/blackdog-logo_main.png" alt="Black Dog" title="Black Dog"/></a>
 
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="legacy.html">Legacy Outfitters</a>
+                  </li>
+                  <li class="nav-item px-5">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+          </nav>
+      </header>
 
+      <div class="site-content">
 
-    <footer class="p-3 fixed-bottom">
+        <div class="coffee-banner">
+          <h1>Coffee</h1>
+          <img src="images/latte-art-metal.jpeg" alt="latte surrounded by workshop tools" title="latte surrounded by workshop tools">
+        </div>
+
+        <h2>Choose from our great selections of drinks, lunches and pastries we have to offer.</h2>
+
+        <div class="coffee-menu">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="seasonal-tab" data-bs-toggle="tab" data-bs-target="#seasonal" type="button" role="tab" aria-controls="seasonal" aria-selected="true">Seasonal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="hot-tab" data-bs-toggle="tab" data-bs-target="#hot" type="button" role="tab" aria-controls="hot" aria-selected="false">Hot</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="iced-tab" data-bs-toggle="tab" data-bs-target="#iced" type="button" role="tab" aria-controls="iced" aria-selected="false">Iced</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tea-tab" data-bs-toggle="tab" data-bs-target="#tea" type="button" role="tab" aria-controls="tea" aria-selected="true">Tea</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="frappes-tab" data-bs-toggle="tab" data-bs-target="#frappes" type="button" role="tab" aria-controls="frappes" aria-selected="false">Frappes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pastries-tab" data-bs-toggle="tab" data-bs-target="#pastries" type="button" role="tab" aria-controls="pastries" aria-selected="false">Pastries</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="seasonal" role="tabpanel" aria-labelledby="seasonal-tab">
+              <div class="menu-item"></div>
+                <h4>Pumpkin Patch</h4>
+                <p>An almond coconut mocha</p>
+              </div>
+
+              <div class="menu-item"></div>
+                <h4>Twisted S'mores</h4>
+                <p>A marshmallow mocha chai with cinnamon</p>
+              </div>
+
+              <div class="menu-item"></div>
+                <h4>Cozy Pumpkin</h4>
+                <p>A pumpkin, toffee nut, caramel iced coffee with almond milk and cinnamon</p>
+              </div>
+
+              <div class="menu-item"></div>
+                <h4>Peanut Butter Fluffh</h4>
+                <p>A marshmallow, peanut butter latte with caramel drizzle</p>
+              </div>
+
+              <div class="menu-item"></div>
+                <h4>Salty Dog 2.0</h4>
+                <p>A salted caramel mocha cold brew with salted cold foam</p>
+              </div>
+
+              <div class="menu-item"></div>
+                <h4>Apple Orchard</h4>
+                <p>An apple iced tea</p>
+              </div>
+
+              <div class="menu-item"></div>
+                <h4>Maple Mocha</h4>
+                <p>A white mocha maple latte</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="hot" role="tabpanel" aria-labelledby="hot-tab">...</div>
+            <div class="tab-pane fade" id="iced" role="tabpanel" aria-labelledby="iced-tab">...</div>
+            <div class="tab-pane fade" id="tea" role="tabpanel" aria-labelledby="tea-tab">...</div>
+            <div class="tab-pane fade" id="frappes" role="tabpanel" aria-labelledby="frappes-tab">...</div>
+            <div class="tab-pane fade" id="pastries" role="tabpanel" aria-labelledby="pastries-tab">...</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+      <footer class="p-3">
 
         <div class="container-fluid">
             <div class="row content">
@@ -50,7 +128,7 @@
                     <li class="col"><a href="#">Co-Working Space</a></li>
                     <li class="col"><a href="#">Events Calendar</a></li>
                     <li class="col"><a href="#">Merchandise</a></li>
-                    <li class="col"><a href="#">Contact Us</a></li>
+                    <li class="col"><a href="#">iced Us</a></li>
                 </ul> 
               </div>
 
@@ -66,6 +144,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
   </body>
 </html>
