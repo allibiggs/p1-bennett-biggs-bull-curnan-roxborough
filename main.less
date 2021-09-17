@@ -8,11 +8,25 @@ h2 {
     .h2-style();
 }
 
+h3 {
+    .h3-style();
+}
+
+h4 {
+    .h4-style();
+}
+
+h5 {
+    .h5-style();
+}
+
 p {
     .text-style();
 }
 
-
+.nav-tabs {
+    .nav-tabs();
+}
 
 header {
     nav {
@@ -121,5 +135,28 @@ footer {
 	min-height: 100vh;
     .site-content {
         flex: 1;
+        #coffee-banner h1 {
+            text-align: center;
+            color: @white;
+            height: 150px;
+            line-height: inherit;
+        }
+        .coffee-h3 {
+            text-align: center;
+            padding: 10px 5%;
+        }
+        .nav-item {
+            // background-color: @green;
+        }
+        .tab-pane {
+            background-color: @black;
+            .menu-item h5 {
+                color: @white;
+            }
+            .menu-item p {
+                font-size: 0.9rem;
+                color: @lightorange;
+            }
+        }
     }
 }
