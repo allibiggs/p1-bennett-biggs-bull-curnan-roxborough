@@ -12,31 +12,64 @@ p {
     .text-style();
 }
 
-
+.logo-hide {
+    display: none;
+}
 
 header {
+    display: flex;
+    background-color: @green;
+    justify-content: space-between;
+
+    .mobile-logo {
+        margin: 0 auto;
+    }
+
     nav {
         background-color: @green;
 
-        .nav {
-            align-items: flex-end;
-            
-            .nav-link {
-                color: @black;
-                .nav-style();
-            }
-        }
-
-        ul .nav .justify-content-center {
-            display: flex;
-            align-items: flex-end;
-        }
-
-        img {
+        .nav-link {
+             color: @black;
+             .nav-style();
+         }
+        
+    }
+            img {
             width: 350px;
         }
     }
-}
+
+        @media (min-width: 992px) {
+            header {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .logo-hide {
+                display: block;
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: flex!important;
+                flex-basis: auto;
+                justify-content: center;
+                }
+
+                .navbar-nav {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+
+                .nav-item {
+                    padding: 0 30px;
+                }
+
+                .mobile-logo a {
+                    display: none;
+            }
+        }
+
 
 .legacy {
     .img-fluid {
@@ -44,10 +77,6 @@ header {
 }
 
     .container-fluid {
-        .content {
-            width: 80%;
-            margin: 0 auto;
-        }
 
         .row{
             img {
@@ -72,6 +101,13 @@ header {
         background-color: @black;
         color: @white;
     }
+
+    @media (min-width: 992px) {
+        .content {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
 }
 
 footer {
@@ -95,6 +131,12 @@ footer {
         a {
             color: @black;
         }
+    }
+
+    @media (min-width: 992px) {
+       .footer-links {
+           display: flex;
+       }
     }
 }
 
