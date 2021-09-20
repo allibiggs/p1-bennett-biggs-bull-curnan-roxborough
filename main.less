@@ -32,6 +32,7 @@ p {
     .nav-tabs();
 }
 
+
 header {
     display: flex;
     background-color: @green;
@@ -158,18 +159,47 @@ footer {
 
 
 // about page styling
-.about-main {
-    max-width: 90vw;
-    margin: auto;
-    padding: 4% 0;
+
+.about {
+    .img-fluid {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
 
     p {
-        padding: 3% 0;
+        width: 80%;
+        margin: 0 auto;
     }
 
+    .container-fluid {
+        flex-direction: column;
+        align-items: center;
+
     .card {
-        border-radius: 0.1rem;
+        width: 100%;
+        height: 300px;
+        border: 2px @white solid;
+
+        .card-header {
+            .h5-style();
+        }
     }
+    
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+ }
+
 
     a {
         text-decoration: none;
@@ -178,46 +208,150 @@ footer {
 }
 
 // coffee page styling
-.site {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-    .site-content {
-        flex: 1;
-        #coffee-banner h1 {
-            text-align: center;
-            color: @white;
-            height: 150px;
-            line-height: inherit;
+
+.coffee {
+    .card {
+        .card();
+        .card-img {
+            .card-img();
         }
-        .coffee-h3 {
-            text-align: center;
-            padding: 10px 5%;
+    }
+        
+    .coffee-menu {
+
+        img {
+            width: 50px;
         }
-        .coffee-menu {
-            padding: 20px 10%;
+
+        .nav-tabs {
+
             .nav-link {
                 border-radius: 0;
                 color: @green;
+                .nav-tabs();
             }
+
             .nav-link.active {
                 background-color: @green;
                 color: @white;
             }
         }
-        .tab-pane {
-            background-color: @black;
-            padding: 20px 10%;
-            .menu-item h5 {
-                color: @white;
-            }
-            .menu-item p {
-                font-size: 0.9rem;
-                color: @lightorange;
+
+    }
+
+    .pane-container {
+        flex-direction: column;
+    }
+
+
+    .tab-pane {
+        background-color: @black;
+        width: 600px;
+        margin: 0 auto;
+
+        .menu-item h4 {
+            color: @white;
+        }
+
+        .menu-item p {
+            font-size: 1rem;
+            color: @lightorange;
+            width: 80%;
+        }
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        .card-bottom {
+            .card-img {
+                width: 100%;
             }
         }
     }
+
+
+    @media (min-width: 992px) {
+        .tab-pane {
+            width: 1000px;
+        }
+
+        .pane-container {
+            flex-direction: row;
+        }
+
+        .card-container {
+            flex-direction: row;
+            justify-content: center;
+        }
+     }
+
 }
+// }
 
 // tavern page styling
+<<<<<<< HEAD
 
+=======
+// home page styling
+
+.home {
+    background: rgb(30,30,33);
+    background: linear-gradient(137deg, rgba(30,30,33,1) 0%, rgba(30,30,33,1) 35%, rgba(0,0,0,1) 100%);
+    color: @white;
+
+    img {
+        width: 500px;
+    }
+    
+    h3 {
+        color: @orange;
+    }
+    
+    p {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .img1 {
+        object-position: bottom;
+    }
+
+    .img3 {
+        object-position: top;
+    }
+
+    .img-carousel {
+        .img-carousel();
+    }
+    
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    
+        .card {
+            .card();
+    
+            a {
+                color: @white;
+                text-decoration: none;
+            }
+
+            .card-title {
+                text-shadow: 2px 2px 10px black;
+            }
+            
+            .card-img {
+                .card-img();
+            }
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .card-container {
+            flex-direction: row;
+            justify-content: center;
+        }
+     }
+}
+>>>>>>> 66db220ad3be15a26418c342b3dc125016caf861
