@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+# p1-bennett-biggs-bull-curnan-roxborough
+
+## Issues
+There were some issues with merging branches, but ultimately these were resolved through the VS Code Github documentation.
+
+## Resources
+[Bootstrap Introduction](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+[CSS Gradient](https://cssgradient.io/)
+[Less CSS](https://lesscss.org/)
+[VS Code Github Documentation](https://code.visualstudio.com/docs/editor/github)
+=======
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/allibiggs/p1-bennett-biggs-bull-curnan-roxborough/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
@@ -35,3 +47,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+>>>>>>> c6ca3108f715fc86167b65a89a95c3fcb88782a0
