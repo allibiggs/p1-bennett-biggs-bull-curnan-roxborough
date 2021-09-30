@@ -35,21 +35,27 @@ p {
 // tavern page styling
 
 .tavern {
+
+    .hours {
+        background-color: @black;
+        color: @white;
+    }
+
     .card {
-        p {
-            font-size: 14px;
-            list-style-type: none;
+        .hero-card-title {
+            text-shadow: 2px 2px 10px black;
+        }
+        li {
+            .h4-style();
+
+            .desc {
+                font-size: 1rem;
+            }
         }
     }
 }
 
-.menu-item {
-p {
-    font-size: 0.9rem;
-    color: @lightorange;
-    }
-}
-
+// Header
 header {
     display: flex;
     background-color: @green;
@@ -104,7 +110,7 @@ header {
             }
         }
 
-
+// legacy
 .legacy {
     .img-fluid {
     .hero-image();
@@ -144,6 +150,7 @@ header {
     }
 }
 
+// footer
 footer {
     background-color: @green;
 
